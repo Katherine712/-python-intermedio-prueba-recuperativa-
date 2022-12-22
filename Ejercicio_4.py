@@ -9,10 +9,7 @@ class valorsiniva:
         iva = self.tasa * self.neto
         with open("w","ejercicio_4.txt") as archivo:
             archivo.write(
-            "El total es:\n" + 
-            "Neto( excluyendo el IVA): " + str(self.neto) + "\n" + 
-            "I.V.A.: " + str(iva) + "\n" + 
-            "valor(n más I.V.A.): " + str(iva + self.neto) )
+            "El total es:\n" + "Neto( excluyendo el IVA): " + str(self.neto) + "\n" +  "IVA: " + str(iva) + "\n" + "valor: " + str(iva + self.neto) )
         
 def main(): 
     usuarios = valorsiniva(100)
